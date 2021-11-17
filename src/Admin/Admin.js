@@ -6,39 +6,30 @@ import React from 'react'
 
 import {
   BrowserRouter as Router,
-  Switch,
-  Route,
-  Link,
-  useParams,
-  useRouteMatch
+  Outlet,
+  Link
+ 
 } from "react-router-dom";
-import MakeAdmin from '../pages/Header/Donation/Blogs/Admin/MakeAdmin/MakeAdmin';
-import Events from '../pages/Header/Donation/Events/Events';
-import AdminRoute from '../pages/UseFirebase/Context/hooks/PrivateRoute/AdminRoute/AdminRoute';
+// import AddPeople from '../AddPeople/AddPeople';
+// import MakeAdmin from '../pages/Header/Donation/Blogs/Admin/MakeAdmin/MakeAdmin';
+// import Events from '../pages/Header/Donation/Events/Events';
+// import AdminRoute from '../pages/UseFirebase/Context/hooks/PrivateRoute/AdminRoute/AdminRoute';
 import useAuth from '../pages/UseFirebase/Context/hooks/UseAuth';
-import Dashbord from './Dashbord';
+// import Dashbord from './Dashbord';
 
 const Admin = () => {
-    let { path, url } = useRouteMatch();
     const {admin} = useAuth();
     return (
         <div>
-            <Link to={`${url}`}><Button>Dashbord</Button></Link>
+            <Link to="/dashbord"><Button>Dashbord</Button></Link>
            {admin && <Box>
-            <Link to={`${url}/makeAdmin`}><Button>Make Admin</Button></Link>
+            <Link to={`/dashbord/makeAdmin`}><Button>Make Admin</Button></Link>
                </Box>}
-            <Link to={`${url}/events`}><Button>Add Events</Button></Link>
-            <Switch>
-        <Route exact path={path}>
-         <Dashbord></Dashbord>
-        </Route>
-        <AdminRoute path={`${path}/makeAdmin`}>
-            <MakeAdmin></MakeAdmin>
-        </AdminRoute>
-        <Route path={`${path}/events`}>
-            <Events></Events>
-        </Route>
-      </Switch>
+            <Link to={`/dashbord/events`}><Button>Add Events</Button></Link>
+            <Link to={`/dashbord/people`}><Button>Add People</Button></Link>
+            {/* <Routes> */}
+        <Outlet></Outlet>
+      {/* </Routes> */}
         </div>
     )
 }

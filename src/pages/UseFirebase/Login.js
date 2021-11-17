@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { CircularProgress, Alert} from '@mui/material';
-import { Link, useLocation, useHistory} from 'react-router-dom'
+import { Link, useLocation, useNavigate} from 'react-router-dom'
 import useAuth from './Context/hooks/UseAuth'
 import './Login.css'
 
@@ -9,7 +9,7 @@ const Login = () => {
     const {user, loginUser,signInWithGoogle, isLoading, authError} = useAuth()
 
      const location = useLocation();
-     const history = useHistory()
+     const navigate = useNavigate()
 
     const handelOnChange= e =>{
         const field = e.target.name;
@@ -21,12 +21,12 @@ const Login = () => {
         setLoginDtaa(newLoginData);
     }
     const handelLoginSubmit = e =>{
-        loginUser(loginData.email, loginData.password, location, history);
+        loginUser(loginData.email, loginData.password, location, navigate);
         e.preventDefault();
     }
 
     const handelGoogleSignIn = () =>{
-        signInWithGoogle(location, history)
+        signInWithGoogle(location, navigate)
     }
     return (
         <div className="input-field">

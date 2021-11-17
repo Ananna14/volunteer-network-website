@@ -1,11 +1,11 @@
 import { CircularProgress, Alert} from '@mui/material';
 import React, { useState } from 'react'
-import { Link, useHistory } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import useAuth from '../../../../../UseFirebase/Context/hooks/UseAuth';
 
 const Register = () => {
     const [loginData, setLoginDtaa] = useState({});
-    const history = useHistory();
+    const navigate = useNavigate();
 
     const {user, registerUser, isLoading, authError} = useAuth();
 
@@ -25,7 +25,7 @@ const Register = () => {
             return
         }
         // alert('helo')
-        registerUser(loginData.email, loginData.password,loginData.name, history)
+        registerUser(loginData.email, loginData.password,loginData.name, navigate)
         e.preventDefault();
     }
     return (
