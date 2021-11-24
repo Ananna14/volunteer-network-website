@@ -6,6 +6,7 @@ import useAuth from '../../../../../UseFirebase/Context/hooks/UseAuth';
 const Register = () => {
     const [loginData, setLoginDtaa] = useState({});
     const navigate = useNavigate();
+    // const initialInfo = {name: user.displayName, email: user.email, date: '', desicription:'', volunteerist:''}
 
     const {user, registerUser, isLoading, authError} = useAuth();
 
@@ -25,7 +26,7 @@ const Register = () => {
             return
         }
         // alert('helo')
-        registerUser(loginData.email, loginData.password,loginData.name, navigate)
+        registerUser(loginData.email, loginData.password, navigate)
         e.preventDefault();
     }
     return (

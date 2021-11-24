@@ -3,7 +3,7 @@ import React from 'react'
 const Dashbord = () => {
     return (
         <div>
-            <h2>Dashboard page</h2>
+            <p>Volunteer register list</p>
         </div>
     )
 }

@@ -8,15 +8,75 @@
       "img": "https://raw.githubusercontent.com/ProgrammingHero1/volunteer-network/main/images/refuseShelter.png"
     },
     {
-      "name": "Host a river clean up.",
-      "img": "https://raw.githubusercontent.com/ProgrammingHero1/volunteer-network/main/images/riverClean.png"
+      "name": "Food Charity",
+      "img": "https://i.ibb.co/HPr78qG/food-Charity.png"
     },
     {
-      "name": "Clean Water",
-      "img": "https://raw.githubusercontent.com/ProgrammingHero1/volunteer-network/main/images/cleanWater.png"
+      "name": "Host a cloth swap",
+      "img": "https://i.ibb.co/pJjVGVP/cloth-Swap.png"
+    },
+    {
+      "name": "Host a river clean-up.",
+      "img": "https://i.ibb.co/c2bWm2G/river-Clean.png"
+    },
+    {
+      "name": "Clean water for children",
+      "img": "https://i.ibb.co/TTKMh41/clean-Water.png"
+    },
+    {
+      "name": "Good Education",
+      "img": "https://i.ibb.co/H2HGrkx/good-Education.png"
+    },
+    {
+      "name": "New books for children",
+      "img": "https://i.ibb.co/L84N3KZ/newBooks.png"
     },
     {
       "name": "Host a study group",
-      "img": "https://raw.githubusercontent.com/ProgrammingHero1/volunteer-network/main/images/studyGroup.png"
+      "img": "https://i.ibb.co/BN0TvRg/study-Group.png"
+    },
+    {
+      "name": "Build birdhouse for your neighbors",
+      "img": "https://i.ibb.co/fdKWxj5/bird-House.png"
+    },
+    {
+      "name": "Organized books at the library",
+      "img": "https://i.ibb.co/9gxbDsL/library-Books.png"
+    },
+    {
+      "name": "Give a seminar on driving safety",
+      "img": "https://i.ibb.co/KyqvxtY/drive-Safety.png"
+    },
+    {
+      "name": "Give free music lessons",
+      "img": "https://i.ibb.co/W2xrp6K/music-Lessons.png"
+    },
+    {
+      "name": "Teach people how to register to vote",
+      "img": "https://i.ibb.co/XF07P3P/vote-Register.png"
+    },
+    {
+      "name": "Clean up your local park",
+      "img": "https://i.ibb.co/SfsLb5n/clearn-Park.png"
+    },
+    {
+      "name": "Give IT help to local adults",
+      "img": "https://i.ibb.co/Lnfjpx0/ITHelp.png"
+    },
+    {
+      "name": "Foster a shelter animal.",
+      "img": "https://i.ibb.co/ZMN2PTK/animal-Shelter.png"
+    },
+    {
+      "name": "Babysit during PTA meethings",
+      "img": "https://i.ibb.co/ySrt6Wq/babySit.png"
+    },
+    {
+      "name": "Collect stuffed animals",
+      "img": "https://i.ibb.co/VYGyx9Z/stuffed-Animals.png"
+    },
+    {
+      "name": "Collect school supplies",
+      "img": "https://i.ibb.co/j3yRJHH/school-Suffiles.png"
     }
   ]

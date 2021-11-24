@@ -21,7 +21,7 @@ const Admin = () => {
     const {admin} = useAuth();
     return (
         <div>
-            <Link to="/dashbord"><Button>Dashbord</Button></Link>
+            <Link to="/dashbord"><Button>Volunteer register list</Button></Link>
            {admin && <Box>
             <Link to={`/dashbord/makeAdmin`}><Button>Make Admin</Button></Link>
                </Box>}
