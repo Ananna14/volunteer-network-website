@@ -22,7 +22,7 @@ const SingleHome = ({home}) => {
         <div className="single-item">
             <img src={img} alt="" />
             <h2>{name}</h2>
-           <Link to="/donation"> <button className="btn">Details</button></Link>
+           {/* <Link to="/donation"> <button className="btn">Details</button></Link> */}
         </div>
     )
 }
