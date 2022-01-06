@@ -14,7 +14,7 @@ const Header = () => {
            <div className="nav">
            <Link className="container" to="/home">Home</Link>
             <Link className="container" to="/donation">Donation</Link>
-            <Link className="container" to="/events">Events</Link>
+            {/* <Link className="container" to="/events">Events</Link> */}
             <Link className="container" to="/blogs">Blogs</Link>
             <Link className="container-reg" to="/register">Register</Link>
             <Link className="container-ad" to={`/dashbord/makeAdmin`}>Admin</Link>

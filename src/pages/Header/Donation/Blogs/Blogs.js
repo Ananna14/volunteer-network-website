@@ -18,6 +18,7 @@ import Typography from '@mui/material/Typography';
 import Volunteer from './Admin/Register/Volunteer/Volunteer';
 import { Link } from 'react-router-dom';
 import { Button } from '@mui/material';
+import './Blogs.css'
 
 const drawerWidth = 240;
 
@@ -33,7 +34,7 @@ function Blogs(props) {
     <div>
       <Toolbar />
       <Divider />
-      <Link className="heading-add" to="/dashbord"><Button>Volunteer register list</Button></Link>
+      {/* <Link className="heading-add" to="/dashbord"><Button>Volunteer register list</Button></Link> */}
       <Link className="heading-add" to={`/dashbord/people`}><Button>Add event</Button></Link>
       <List>
         {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
